@@ -17,12 +17,24 @@ library(datasauRus)
 
 ### Lab Exercise
 
-( star_data <- datasaurus_dozen %>%filter(dataset=="star")
-ggplot(data = star_data, mapping = aes(x = x, y = y )) +geom_point()
-star_data%>%summarize(r = cor (x, y))
-
-
-TAsk4 
-circle_data <- datasaurus_dozen %>%filter(dataset=="circle")
-ggplot(data = circle_data, mapping = aes(x = x ,y = y))+geom_point()
-circle_data%>%summarize(r = cor (x,y)).)
+( > library(tidyverse)
+> library(datasauRus)
+> head(datasaurus_dozen)
+# A tibble: 6 x 3
+  dataset     x     y
+  <chr>   <dbl> <dbl>
+1 dino     55.4  97.2
+2 dino     51.5  96.0
+3 dino     46.2  94.5
+4 dino     42.8  91.4
+5 dino     40.8  88.3
+6 dino     38.7  84.9
+> summary(datasaurus_dozen)
+   dataset                x               y           
+ Length:1846        Min.   :15.56   Min.   : 0.01512  
+ Class :character   1st Qu.:41.07   1st Qu.:22.56107  
+ Mode  :character   Median :52.59   Median :47.59445  
+                    Mean   :54.27   Mean   :47.83510  
+                    3rd Qu.:67.28   3rd Qu.:71.81078  
+                    Max.   :98.29   Max.   :99.69468  
+> View(datasaurus_dozen)
