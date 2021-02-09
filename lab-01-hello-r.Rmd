@@ -17,4 +17,12 @@ library(datasauRus)
 
 ### Lab Exercise
 
-(Type your answer to the Exercise here. Remember to include the code, you need to put the code between three backticks followed by the following line on top of the code {r load-packages, message=FALSE}. See 'Load Packages' above as an example. Delete everything in these brackets after typing your answer.)
+( star_data <- datasaurus_dozen %>%filter(dataset=="star")
+ggplot(data = star_data, mapping = aes(x = x, y = y )) +geom_point()
+star_data%>%summarize(r = cor (x, y))
+
+
+TAsk4 
+circle_data <- datasaurus_dozen %>%filter(dataset=="circle")
+ggplot(data = circle_data, mapping = aes(x = x ,y = y))+geom_point()
+circle_data%>%summarize(r = cor (x,y)).)
